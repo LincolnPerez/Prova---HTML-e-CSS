@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-Bootstree, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="teste1-.css">
+    <title>Playlist de Filmes</title>
+
+
+</head>
+<body>  
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="file:///C:/Users/linco/OneDrive/%C3%81rea%20de%20Trabalho/HTMLS/Bootstrap/paginainicial.html#">Início</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="file:///C:/Users/linco/OneDrive/%C3%81rea%20de%20Trabalho/HTMLS/Bootstrap/historia.html">História</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="file:///C:/Users/linco/OneDrive/%C3%81rea%20de%20Trabalho/HTMLS/Bootstrap/referencias1.html">Referências Página 1</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="file:///C:/Users/linco/OneDrive/%C3%81rea%20de%20Trabalho/HTMLS/Bootstrap/referencias2.html">Referências Página 2</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="file:///C:/Users/linco/OneDrive/%C3%81rea%20de%20Trabalho/HTMLS/Bootstrap/profissional.html">Profissional</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="file:///C:/Users/linco/OneDrive/%C3%81rea%20de%20Trabalho/HTMLS/Bootstrap/musicas.html">Músicas</a>
+                            </li>
+                         <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="file:///C:/Users/linco/OneDrive/%C3%81rea%20de%20Trabalho/HTMLS/Bootstrap/filmes.html">Filmes</a>
+                            </li>
+                     </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <div class="container">
+
+
+  <div class="heading">Playlist de Filmes</div>
+
+          
+           <div class="video-container">
+          <div class="video">
+             <video src="../Bootstrap/video/Straight Outta Compton (2015) Official Theatrical Trailer NWA Movie MTV_360P (online-video-cutter.com).mp4">
+          </div>
+
+          <div class="video">
+              <video src="../Bootstrap/video/Tropa de Elite - Trailer_360P (online-video-cutter.com).mp4">
+           </div>
+
+           <div class="video">
+              <video src="../Bootstrap/video/2018)_360P (online-video-cutter.com).mp4">
+           </div>
+
+           <div class="video">
+              <video src="../Bootstrap/video/Vingadores - Guerra Infinita Trailer Oficial Legendado_360P (online-video-cutter.com).mp4">
+           </div>
+
+           <div class="video">
+              <video src="../Bootstrap/video/Spider-Man Official Trailer (2002)_360P (online-video-cutter.com).mp4">
+           </div>
+
+           <div class="video">
+              <video src="../Bootstrap/video/Até o Último Homem Trailer_360P (online-video-cutter.com).mp4">
+           </div>
+
+           <div class="video">
+              <video src="../Bootstrap/video/O AUTO DA COMPADECIDA 2000 Trailer_360P (online-video-cutter.com).mp4">
+           </div>
+
+           <div class="video">
+              <video src="../Bootstrap/video/The Platform Main Trailer Netflix_360P (online-video-cutter.com).mp4">
+           </div>
+           <div class="video">
+            <video src="../Bootstrap/video/Interstellar - Trailer - Official Warner Bros. UK_360P (online-video-cutter.com).mp4">
+         </div>
+
+            <script>  
+
+              var video = document.querySelectorAll('video')
+          
+              video.forEach(play => play.addEventListener('click', () => {
+                  play.classList.toggle('active');
+                  
+                  if(play.paused){
+                      play.play();
+                  }else{
+                      play.pause();
+                      play.currentTime = 0
+                  }
+              }));
+            </script>  
+
+              <footer> 
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-sn-12 text-center text-light p-3">
+                          <p class="rodape">Copyright - Todos os direitos reservados</p>
+                      </div>
+                  </div>
+              </div>
+            </footer>
+
+            
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
